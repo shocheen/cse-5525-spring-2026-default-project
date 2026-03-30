@@ -25,7 +25,6 @@ dataset_name=(
     "gsm8k"
     "mbpp"
     "ifeval"
-    "xstest"
     "harmbench::default"
     "xstest::default"
 
