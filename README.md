@@ -121,7 +121,9 @@ olmes --model <your-model-path> --task ifeval --output-dir <output-dir>
 olmes --model <your-model-path> --task mbpp --output-dir <output-dir>
 
 # HarmBench (Safety Evaluation)
-olmes --model <your-model-path> --task harmbench::wildguard_reasoning_answer --output-dir <output-dir>
+olmes --model <your-model-path> --task harmbench::default --output-dir <output-dir>
+
+olmes --model <your-model-path> --task xstest::default --output-dir <output-dir>
 ```
 
 ### Evaluation Output
