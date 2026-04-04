@@ -18,8 +18,7 @@ export VLLM_ENABLE_V1_MULTIPROCESSING=0
 
 cd olmes/oe_eval/dependencies/safety
 bash install.sh
-
-
+cd ../../../
 
 dataset_name=(
     "gsm8k"
@@ -37,5 +36,6 @@ for dataset in "${dataset_name[@]}"; do
     uv run olmes \
         --model ${model_path} \
         --task ${dataset} \
-        --output-dir $model_path-eval-${dataset} 
+        --output-dir $model_path-eval-${dataset} \
+        --num-shots 8
 done
